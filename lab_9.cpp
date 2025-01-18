@@ -119,6 +119,12 @@ public:
 		paczki = nowe_paczki;
 		return *this;
 	}
+	
+	~Kurier(){
+		delete[] paczki;
+		paczki = nullptr;
+	
+	}
 
 };
 
